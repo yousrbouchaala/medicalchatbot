@@ -1,0 +1,180 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {
+"tag": "options",
+"patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+"responses": ["I can provide you with some tips about your health, medications, and advice. Let me know how I can assist you further.", "Offering support and advice for your health, medications, and general well-being."],
+"context": [""]
+},
+        
+  
+      
+        
+        {"tag": "pain",
+         "patterns": [
+        "I have a headache",
+        "My muscles are sore",
+        "My eyes hurt",
+        "I have a stomachache",
+        "What can I do for pain relief?"
+       ],"responses": [
+"For headaches, try resting in a quiet, dark room or taking a pain reliever such as ibuprofen or acetaminophen.",
+"Muscle soreness can often be relieved with gentle stretching, massage, or a warm bath.",
+"If your eyes hurt, try taking a break from screens or using lubricating eye drops.",
+"Stomachaches can be caused by a variety of factors, including indigestion, gas, or stress. Drinking peppermint tea or taking an over-the-counter antacid may provide relief.",
+"Remember to always consult a healthcare professional if you have persistent or severe pain."
+],"context": [
+"pain_advice"
+]
+} , 
+{
+"tag": "health",
+"patterns": [
+"What are some ways to maintain good health?",
+"How can I stay healthy?",
+"What should I eat to stay healthy?",
+"What are some common health problems?",
+"How do I prevent illness?",
+"What are some ways to improve my overall well-being?"
+],
+"responses": [
+"Maintaining a balanced diet, getting regular exercise, and getting enough sleep are all important for good health.",
+"Staying hydrated and avoiding unhealthy habits like smoking can also contribute to good health.",
+"Some common health problems include heart disease, diabetes, and cancer.",
+"Washing your hands regularly, staying up to date on vaccinations, and avoiding contact with sick individuals can help prevent illness.",
+"In addition to physical health, it's important to prioritize mental health by managing stress and seeking support when needed.",
+"Remember to always consult a healthcare professional for personalized advice."
+],
+"context": [
+"health_advice"
+]
+} , 
+{
+"tag": "pain_medication",
+"patterns": [
+"What medication can I take for pain?",
+"Is there an over-the-counter pain reliever I can use?",
+"What's the best painkiller?",
+"What's the difference between ibuprofen and acetaminophen?",
+"Can I take aspirin for pain relief?"
+],
+"responses": [
+"Ibuprofen and acetaminophen are both common pain relievers that can be purchased over-the-counter. Ibuprofen is an anti-inflammatory medication that can also help reduce swelling, while acetaminophen is a pain reliever that does not have anti-inflammatory properties.",
+"Other over-the-counter options for pain relief include aspirin, naproxen, and topical analgesics.",
+"The best painkiller for you may depend on the type of pain you're experiencing and any other health conditions you may have. Always consult with a healthcare professional before taking any new medications.",
+"Aspirin can be used for pain relief, but it should not be taken by children or individuals with certain medical conditions without first consulting with a healthcare professional."
+],
+"context": [
+"pain_medication_advice"
+]
+}, 
+{
+"tag": "diet",
+"patterns": [
+"What are some tips for sticking to a healthy diet?",
+"How can I eat healthier?",
+"What should I include in a balanced meal?",
+"What are some healthy snack options?",
+"How can I avoid overeating?"
+],
+"responses": [
+"Some tips for sticking to a healthy diet include planning meals in advance, keeping healthy snacks on hand, and limiting consumption of processed and high-calorie foods.",
+"Eating a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats can help you maintain a balanced diet.",
+"A balanced meal should include a serving of protein, a serving of vegetables or fruit, and a serving of whole grains.",
+"Healthy snack options include nuts, fruit, vegetables, and hummus.",
+"To avoid overeating, try eating slowly and mindfully, using smaller plates and bowls, and paying attention to your hunger and fullness cues."
+],
+"context": [
+"diet_advice"
+]
+}, 
+{
+"tag": "womens_health",
+"patterns": [
+"How can I manage menstrual cramps?",
+"What are some ways to ease menopause symptoms?",
+"What foods should I avoid during pregnancy?",
+"How can I prepare for childbirth?",
+"What are some common breast health concerns?",
+"How can I improve my fertility?"
+],
+"responses": [
+"Some ways to manage menstrual cramps include taking over-the-counter pain relievers, using a heating pad or hot water bottle, practicing relaxation techniques such as yoga or meditation, and staying hydrated.",
+"To ease menopause symptoms, you can try hormone replacement therapy, make dietary changes such as increasing your intake of soy and flaxseed, exercise regularly, and practice stress management techniques.",
+"During pregnancy, you should avoid raw or undercooked meat, eggs, and fish, as well as unpasteurized dairy products and certain types of fish that may contain high levels of mercury. It's also important to limit your caffeine and alcohol intake.",
+"To prepare for childbirth, you can take childbirth education classes, practice relaxation techniques such as deep breathing and visualization, make a birth plan with your healthcare provider, and consider hiring a doula.",
+"Common breast health concerns include breast pain, lumps, and nipple discharge. It's important to perform regular breast self-exams, and to contact your healthcare provider if you notice any changes in your breast tissue or experience any breast-related symptoms.",
+"To improve your fertility, you can maintain a healthy weight, avoid smoking and excessive alcohol consumption, exercise regularly, and manage stress. It's also important to have regular checkups with your healthcare provider to ensure that any underlying health conditions are addressed."
+],
+"context": [
+"womens_health_advice"
+]
+}, 
+{
+"tag": "nutrition",
+"patterns": [
+"What are some healthy meal ideas?",
+"How can I eat a balanced diet?",
+"What are some tips for portion control?",
+"What foods should I avoid if I have high blood pressure?",
+"What are some good sources of plant-based protein?",
+"What are some dietary recommendations for diabetes?"
+],
+"responses": [
+"Some healthy meal ideas include grilled chicken with roasted vegetables, quinoa and black bean salad, and salmon with steamed broccoli and brown rice.",
+"To eat a balanced diet, it's important to include a variety of foods from all of the food groups, including fruits and vegetables, whole grains, lean protein sources, and healthy fats.",
+"Tips for portion control include using smaller plates, measuring your food, eating slowly, and avoiding distractions while eating.",
+"If you have high blood pressure, you should avoid foods that are high in sodium, such as processed foods, fast food, and canned foods. It's also important to limit your alcohol intake and maintain a healthy weight.",
+"Good sources of plant-based protein include beans, lentils, tofu, nuts, and seeds.",
+"Dietary recommendations for diabetes include monitoring your carbohydrate intake, eating regular meals and snacks throughout the day, and choosing foods that are low in saturated and trans fats."
+],
+"context": [
+"nutrition_advice"
+]
+},
+{
+"tag": "eyes_pain",
+"patterns": [
+"What are some common causes of eye pain?",
+"How can I relieve eye pain?",
+"When should I see a doctor for eye pain?",
+"What are some home remedies for eye pain?",
+"Can eye pain be a sign of a more serious condition?"
+],
+"responses": [
+"Common causes of eye pain include dry eyes, eye infections, eye strain, and injury to the eye. If you are experiencing eye pain, it's important to take breaks from screens, avoid rubbing your eyes, and use eye drops to lubricate your eyes.",
+"To relieve eye pain, you can use warm compresses, take over-the-counter pain relievers, and rest your eyes. If your eye pain persists, you should see a doctor.",
+"You should see a doctor for eye pain if you experience any of the following symptoms: vision changes, severe pain, redness, discharge from the eye, or sensitivity to light.",
+"Some home remedies for eye pain include using warm compresses, taking over-the-counter pain relievers, and using eye drops to lubricate your eyes. It's important to avoid rubbing your eyes and take frequent breaks from screens.",
+"Eye pain can be a sign of a more serious condition such as glaucoma, a corneal ulcer, or an infection. If you experience severe or persistent eye pain, you should see a doctor as soon as possible."
+],
+"context": [
+"eye_pain_advice"
+]
+}
+
+
+
+
+
+   ]
+}
